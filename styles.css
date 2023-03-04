@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family:roboto;
+    font-family:roboto, sans-serif;
     justify-content: space-between;
     align-items: stretch;
     margin: 0;
@@ -11,7 +11,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #1F2937;
     color: #f9faf8;
     padding: 16px 200px;
@@ -23,7 +23,12 @@ body {
     gap: 24px;
     list-style-type: none;
     padding: 0;
-    margin:0;
+    margin-left:auto;
+    color: #e5e7eb;
+ }
+
+ .header h2 {
+    margin-right:auto;
  }
 .container1 {
     display: flex;
@@ -31,9 +36,36 @@ body {
     color: #f9faf8;
     font-size: 48px;
     padding: 72px 200px;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
+
+.c1left, .c1right{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.c1right {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+}
+
+.c1left {
+    margin-right: auto;
+}
+.c1left h1{
+    margin: 0px;
+}
+.container1 img {
+    border: #ffbe0cdc;
+    border-width: 4px;    
+    border-radius: 15px;
+    border-style: ridge;
+}
+
 
 .container1 p {
     font-size:18px;
@@ -52,7 +84,8 @@ body {
 .container2 .goatpics {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap:32px;
+    justify-content: space-around;
 }
 .container2 img {
     border: #3882F6;
@@ -78,24 +111,30 @@ div img {
 
 .container3 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #e5e7eb;
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
     color: #1f2937b7;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
-    padding:  0px 300px;
+    align-items: center;
+    padding:  100px 300px;
+}
+
+.container3 .quote {
+    margin-right: auto;
 }
 
 .container3 .quotename {
     font-size: 24px;
     font-weight: 800;
     color: #1f2937e7;
+    margin-left: auto;
 
 }
+
+
 
 .container4 {
     display: flex;
@@ -103,19 +142,22 @@ div img {
     align-items: center;
     background-color: #3882F6;
     margin: 72px 200px;
+    padding: 72px;
     color:#e5e7eb;
     border-radius: 10px;
 }
 
-.c4text {
-    align-self: flex-end;
+.container4 .c4header {
+    color: #f9faf8;
+    font-size: 24px;
 }
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #1F2937 ;
-    color:#f9faf8
+    color:#f9faf8;
 }
 
 button {
@@ -126,4 +168,5 @@ button {
     border-radius: 5px;
     border-width: 2px;
     padding: 8px 16px;
+    
 }
